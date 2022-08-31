@@ -12,7 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
-	<LangVersion>latest</LangVersion>
+    <LangVersion>latest</LangVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -94,6 +95,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Office.Interop.Excel">
+      <Version>15.0.4795.1001</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.OracleClient">
+      <Version>1.0.8</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\excel.png" />
+    <Resource Include="Resources\exit.png" />
+    <Resource Include="Resources\lightbulb %281%29.png" />
+    <Resource Include="Resources\lightbulb.png" />
+    <Resource Include="Resources\promotion.png" />
+    <Resource Include="Resources\search.png" />
+    <Resource Include="Resources\startup %282%29.png" />
+    <Resource Include="Resources\statistics.png" />
+    <Resource Include="Resources\stoloto_logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
